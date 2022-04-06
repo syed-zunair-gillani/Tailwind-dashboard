@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARNO Dashboard</title>
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body class="font-NewsGothic">
+  <!-- header  -->
+  <header class="fixed top-0 z-10 flex justify-between w-full py-1 bg-red-600">
+    <div class="flex justify-center ml-8 text-center md:ml-14">
+      <img src="../public/images/global.svg" alt="glob" class="w-5" />
+      <span class="ml-1 text-white font-NewsGothic font-medium mt-[2px]">DE</span>
+    </div>
+    <div class="">
+      <a href="" class="uppercase text-white px-10 md:px-20 border-x-[1px] border-gray-200">Arno.shop</a>
+      <a href="" class="px-10 text-white uppercase md:px-20">Arno.DE</a>
+    </div>
+  </header>
+  <!-- side bar + menu  -->
+  <aside class="fixed top-0 h-full px-4 pt-16 bg-gray-200 border-r-2 border-gray-300 -z-10 w-[70px]">
+    <div class="">
+      
+      <img id="menubtn" onclick="OpenNavMenu()" src="../public/images/hamburger-menu.svg" alt="hamburger-menu" class="ml-[6px] cursor-pointer" />
+      
+      <div class="flex flex-col items-center mt-10 space-y-4">
+        <a
+          class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer hover:border-red-600">
+          <img src="../public//images/icon-member.png" alt="icon-member" />
+        </a>
+        <a
+          class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer hover:border-red-600">
+          <img src="../public//images/icon-eye.png" alt="icon-eye" />
+        </a>
+        <a
+          class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer hover:border-red-600">
+          <img src="../public//images/icon-file.png" alt="icon-file" />
+        </a>
+        <a
+          class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer hover:border-red-600">
+          <img src="../public//images/icon-book.png" alt="icon-book" />
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- navmenu  -->
+  <nav class="fixed top-0 w-64 h-screen transition-all ease-in-out bg-gray-200 shadow-lg openmenu -left-72 px-7 shadow-slate-400">
+    <div class="relative">
+      <button class="cross" onclick="CloseNav()">
+        <img src="../public/images/cross.png" alt="cross" class="absolute top-10 -right-5">
+      </button>
+      <div class="pt-24">
+        <h2 class="text-lg font-bold text-red-600 uppercase">ihre anro.now startseite</h2>
+        <h2 class="mt-5 text-xl font-bold">Ihre anro Organizar</h2>
+
+        <div>
+          <ul class="text-lg text-red-600 nav"> 
+            <li class="nav-item dropdown">
+              <button href="#" class=" mt-2 dropdown-toggle flex w-full justify-between border-b-[1px] uppercase dropdown border-red-600 items-center">
+                <p class="block py-1 text-base font-bold tracking-wider ">Dafur steahen wir </p>
+                <img src="../public//images/arrow-bottom.png" alt="arrow-bottom" class="w-4 h-4">
+              </button>
+              <ul class="hidden mt-2 text-sm font-bold tracking-wider text-gray-600 uppercase dropdown-menu subMenu">
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">vision</a></li>
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">mission </a></li>
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">unternehmenswerte </a></li>
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">kommunikationswerte </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <button href="#" class=" mt-2 dropdown-toggle flex w-full justify-between border-b-[1px] uppercase dropdown border-red-600 items-center">
+                <p class="block py-1 text-base font-bold tracking-wider ">Arno Intern</p>
+                <img src="../public//images/arrow-bottom.png" alt="arrow-bottom" class="w-4 h-4">
+              </button>
+              <ul class="hidden mt-2 text-sm font-bold tracking-wider text-gray-600 uppercase dropdown-menu subMenu">
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">vision</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <button href="#" class=" mt-2 dropdown-toggle flex w-full justify-between border-b-[1px] uppercase dropdown border-red-600 items-center">
+                <p class="block py-1 text-base font-bold tracking-wider ">Foramolare</p>
+                <img src="../public//images/arrow-bottom.png" alt="arrow-bottom" class="w-4 h-4">
+              </button>
+              <ul class="hidden mt-2 text-sm font-bold tracking-wider text-gray-600 uppercase dropdown-menu subMenu">
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">vision</a></li>
+              </ul>
+            </li>
+           
+            <h2 class="mt-5 text-xl font-bold text-black">Arno informiert</h2>
+
+            <li class="nav-item dropdown">
+              <button href="#" class=" mt-2 dropdown-toggle flex w-full justify-between border-b-[1px] uppercase dropdown border-red-600 items-center">
+                <p class="block py-1 text-base font-bold tracking-wider ">Arno Intern</p>
+                <img src="../public//images/arrow-bottom.png" alt="arrow-bottom" class="w-4 h-4">
+              </button>
+              <ul class="hidden mt-2 text-sm font-bold tracking-wider text-gray-600 uppercase dropdown-menu subMenu">
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">vision</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <button href="#" class=" mt-2 dropdown-toggle flex w-full justify-between border-b-[1px] uppercase dropdown border-red-600 items-center">
+                <p class="block py-1 text-base font-bold tracking-wider ">Foramolare</p>
+                <img src="../public//images/arrow-bottom.png" alt="arrow-bottom" class="w-4 h-4">
+              </button>
+              <ul class="hidden mt-2 text-sm font-bold tracking-wider text-gray-600 uppercase dropdown-menu subMenu">
+                <li><a href="#" class="block py-2 border-b-[1px] border-gray-600 hover:text-red-600">vision</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- inner section  -->
+  <section class="flex-1 w-[calc(100%-130px)] mr-5 mt-10 lg:mr-10 float-right">
+    <!-- search section  -->
+    <div class="flex items-center justify-between">
+      <div class="border-[1px] border-red-600 w-80 flex py-3 px-2 rounded-md items-center h-14">
+        <img src="../public/images/icon-search.png" alt="search icon" />
+        <input type="text" class="w-full ml-2 font-semibold tracking-wider text-gray-500 uppercase outline-none"
+          placeholder="Search" />
+      </div>
+      <div class="flex item-center">
+        <div class="flex items-center">
+          <img src="../public//images/circle-image.png" alt="" class="ml-2" />
+          <div class="flex items-center ml-2">
+            <h3 class="hidden font-bold tracking-wider text-gray-500 uppercase md:block">
+              Maximilion Mustermann
+            </h3>
+            <img src="../public/images/icon-bottom.png" alt="" class="hidden ml-1 md:block" />
+          </div>
+        </div>
+        <img src="../public//images/img.png" alt="" class="hidden ml-7 md:block" />
+      </div>
+    </div>
+
+    <!-- bottom icon  -->
+    <div class="flex items-center mt-6 space-x-2">
+      <a class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer">
+        <img src="../public//images/icon-home-now.png" alt="icon-member" />
+      </a>
+      <a class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer">
+        <img src="../public//images/icon-multti-comment.png" alt="icon-member" />
+      </a>
+      <a class="flex items-center justify-center w-10 h-10 border-2 border-gray-400 rounded-full cursor-pointer">
+        <img src="../public//images/icon-multti-comment.png" alt="icon-member" />
+      </a>
+      <span class="text-xl font-bold text-gray-500 uppercase">Intern / Dashboard</span>
+    </div>
+
+    <!-- cards  -->
+    <div class="grid grid-cols-1 gap-3 mt-8 md:grid-cols-2 lg:grid-cols-4">
+      <div
+        class="flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+          <p>aktuelle themen</p>
+          <p>mitarbeiter stellt sich vor</p>
+          <p>abteilung/niederlassung</p>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+          <p>aktuelle themen</p>
+          <p>gf informiert</p>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+          <p>aktuelle themen</p>
+          <p>zahl des monats</p>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+          <p>aktuelle themen</p>
+          <p>inside</p>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex-1 float-right mt-20 w-[calc(100%-70px)] px-10 pl-10 lg:pl-5 pr-5 lg:pr-10 bg-red-600">
+    <div class="grid grid-cols-1 gap-3 mb-4 -mt-14 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        class="shadow-lg bg-white lg:col-span-2 flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="p-4 text-red-600">
+          <p class="pb-2 border-b-[1px] border-red-600">
+            neu auf now.arno.de
+          </p>
+          <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+            <p class="uppercase">aktuelle themen</p>
+          </div>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+
+      <div
+        class="flex shadow-lg bg-white flex-col justify-between border-[1px] border-red-600 rounded-md text-lg tracking-wider uppercase">
+        <div class="p-4 text-red-600">
+          <p class="pb-2 border-b-[1px] font-bold border-red-600">
+            letzter eintrag//arno news feed
+          </p>
+          <div class="flex mt-3 item item-center">
+            <img src="../public//images//circle-image.png" alt="" />
+            <div class="ml-2">
+              <h3 class="hidden text-sm font-bold tracking-wider text-gray-700 uppercase md:block">
+                Maximilion Mustermann
+              </h3>
+              <h3 class="text-sm tracking-wider text-gray-500 uppercase">
+                Mustrabtelung
+              </h3>
+              <h3 class="text-sm tracking-wider text-gray-500 uppercase">
+                date
+              </h3>
+            </div>
+          </div>
+          <h1 class="py-1 mt-3 font-bold text-black uppercase border-gray-300 border-y-2">
+            Title beitrag
+          </h1>
+          <p class="mt-2 text-lg tracking-normal text-black capitalize">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            assumenda, atque, dolorem quos at totam vitae incidunt obcaecati,
+            distinctio voluptas porro? Nesciunt consequatur laborum fugiat
+            maiores quaerat rerum tempore dolorum sit nemo, minus molestias
+            porro earum alias ullam ipsam recusandae. Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Quasi perspiciatis nemo vero
+            aliquam consectetur nihil!
+          </p>
+          <div class="flex items-center py-2 mt-2 border-t-2 border-gray-300">
+            <div class="flex item-center">
+              <img src="../public/images/icon-like.png" alt="icon like" />
+              <span class="mt-2 ml-2 text-gray-400">0</span>
+            </div>
+            <div class="flex mt-2 ml-5 lg:ml-8 item-center">
+              <img src="../public/images/icon-comment.png" alt="icon like" />
+              <span class="ml-2 text-gray-400 uppercase">Kommentieren</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full py-1 pl-8 text-base font-bold tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 mt-5 mb-5 md:grid-cols-2">
+      <div
+        class="shadow-lg bg-white flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="p-4 text-red-600">
+          <p class="pb-2 border-b-[1px] border-red-600">
+            neu auf now.arno.de
+          </p>
+          <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+            <p class="uppercase">aktuelle themen</p>
+          </div>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+
+      <div
+        class="shadow-lg bg-white flex flex-col justify-between border-[1px] border-red-600 rounded-md text-lg font-bold tracking-wider uppercase">
+        <div class="p-4 text-red-600">
+          <p class="pb-2 border-b-[1px] border-red-600">
+            neu auf now.arno.de
+          </p>
+          <div class="mt-8 mb-4 ml-8 text-[#D412B6]">
+            <p class="uppercase">aktuelle themen</p>
+          </div>
+        </div>
+        <div class="w-full py-1 pl-8 text-base tracking-wider text-white bg-red-600">
+          zum vollstandigen artikel >>>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

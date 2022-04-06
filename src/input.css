@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Include fonts */
+
+@font-face {
+    font-family: News;
+    src: url('../public/fonts/News-Gothic.woff2') format('woff2'), url('../public/fonts/News-Gothic.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: NewsBold;
+    src: url('../public/fonts/News-Gothic.woff');
+    font-weight: bold;
+}
+
+  .nav .dropdown .dropdown-menu {
+    visibility: hidden;
+    transition: all 0.5s;
+    display: none;
+  }
+  .nav .dropdown button:focus {
+    pointer-events: none;
+  }
+  .nav .dropdown button:focus + .dropdown-menu {
+    display: block;
+    visibility: visible;
+  }
+
+  .openmenubtn:focus{
+    pointer-events: none;
+  }
+  .openmenubtn:focus + .openmenu{
+    background: red;
+  } 
